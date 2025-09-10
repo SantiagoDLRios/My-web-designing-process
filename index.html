@@ -1,25 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hola Mundo</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Messi</title>
     <style>
-      html, body { height: 100%; margin: 0; }
-      body { display: grid; place-items: center; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-      .card { text-align: center; padding: 2rem 3rem; border-radius: 1.25rem; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
-      h1 { margin: 0 0 .5rem; font-size: 2.25rem; }
-      p { margin: 0; opacity: .7; }
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f0f8ff;
+            color: #003366;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            color: #003366;
+        }
+
+        nav h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            padding: 30px;
+        }
+
+        .post {
+            background-color: #e6f2ff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffcc00;
+            border-radius: 5px;
+        }
+
+        h2 {
+            color: #003366;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .about-link {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .about-link a {
+            background-color: #ffcc00;
+            color: #003366;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .about-link a:hover {
+            background-color: #ffd633;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
     </style>
-  </head>
-  <body>
-    <main class="card">
-      <h1>¡Hola, Mundo!</h1>
-      <p>Tu primera página HTML</p>
+</head>
+<body>
+
+    <nav>
+        <h1>Blog de Messi</h1>
+    </nav>
+
+    <main>
+        <section class="post">
+            <h2>El inicio de una leyenda</h2>
+            <!-- Imagen del inicio de Messi -->
+            <img src="https://elmejorlionelmessi.wordpress.com/wp-content/uploads/2011/08/11.jpg">
+            <p>Desde pequeño en Rosario, Messi ya mostraba un talento único. Su historia comenzó en Newell’s Old Boys antes de mudarse a Barcelona a los 13 años.</p>
+        </section>
+
+        <section class="post">
+            <h2>Glorias en el Barcelona</h2>
+            <!-- Imagen de Messi en Barcelona -->
+            <img src="https://img2.rtve.es/i/?w=1600&i=1628614309917.jpg">
+            <p>En el FC Barcelona, Messi ganó 10 Ligas, 4 Champions y 7 Balones de Oro. Formó parte del tridente histórico con Suárez y Neymar.</p>
+        </section>
+
+        <section class="post">
+            <h2>La Copa América y la consagración</h2>
+            <!-- Imagen de Messi con la Copa América -->
+            <img src="https://i.pinimg.com/736x/c6/46/2c/c6462cac943f0e2f980a8f16a202bbbe.jpg">
+            <p>En 2021, Messi levantó su primer gran título con Argentina: la Copa América en Brasil. Fue un momento emotivo para todo el país.</p>
+        </section>
+
+        <section class="post">
+            <h2>Campeón del Mundo</h2>
+            <!-- Imagen de Messi campeón mundial -->
+            <img src="https://the18.com/sites/default/files/styles/x-large_square__4_3_/public/feature-images/GettyImages-1450106798.jpg?itok=K95wEgWM">
+            <p>En 2022, Lionel Messi logró lo máximo: ganar el Mundial con Argentina en Qatar. Un sueño hecho realidad tras una carrera llena de sacrificios.</p>
+        </section>
+
+        <div class="about-link">
+            <a href="about.html">Sobre Nosotros</a>
+        </div>
     </main>
-    <script>
-      // Un ejemplo simple en JS
-      console.log("Hola desde JavaScript");
-    </script>
-  </body>
+
+    <footer>
+        <p>Blog creado por fans de Messi. Todos los derechos reservados © 2025</p>
+    </footer>
+
+</body>
 </html>
+
